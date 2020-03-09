@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  background-color: lavenderblush;
+
+}
+
+.dropdownMain {
+  background-color: rgb(236, 167, 190);
+  border-style: outset;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius:50px ;
+  margin-left: -10px;
+  width: 500px;
+  height: 300px;
+}
+
+.title {
+  font: italic bold 12px/30px Georgia, serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.selectors {
+  padding:2px 10px;
+  margin-top: 10px;
+  width: 50%;
+  margin-left: 130PX;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.selectors:hover {
+  background-color: rgb(243, 200, 214);
+}
+
+.dropdownChild {
+  margin-top: 20px;
+  margin-left: 30PX;
+}
+
+ .selectFirst{
+  padding:2px 10px; 
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 150px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.selectSecond{
+  padding:2px 10px;
+  width: 150px;
+  margin-left: 10px;
+  height: 25px;
+  border-radius: 10px;
+
+}
+
+.selectFirst:hover {
+  background-color: rgb(243, 200, 214);
+}
+
+.selectSecond:hover {
+  background-color: rgb(243, 200, 214);
+}
+
+.textValue{
+  margin-top: 20px;
+  margin-left: 60px;
+  
+}
+  
+.firstInput{
+  
+  padding:2px 2px;
+  margin-left: 15px;
+  margin-right: 10px;
+  width: 150px;
+  height: 25px;
+  
+ }
+.secondInput{
+  padding:2px 2px;
+  width: 150px;
+  margin-left: 10px;
+  height: 25px;
+}
+
+.button{ 
+  border: none;
+  padding: 9px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 200px;
+  cursor: pointer;
+}
+
+
