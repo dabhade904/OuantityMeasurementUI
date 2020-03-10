@@ -1,35 +1,43 @@
-import axios from 'axios';
+const axios = require ('axios');
 
-async function configuration(data) {
+module.exports = {
+ 
+async configuration(data) {
     console.log("in axios func--->", data);
 
     return axios({
         method: 'POST',
-        url: 'http://localhost:4000/value',
+        url: 'http://localhost:4000/unitValue',
         data: data
     })
-}
+},
 
-async function getUnits(data1) {
-    console.log(data1);
+async  getUnits(data1) {
+    console.log("congiiiiii",data1);
     var a=data1.type
-    var url="http://localhost:4000/unitType"
+    var url="http://localhost:4000/unitType/"
     var finalUrl=(url.concat(a))
     return axios({
         method:"GET",
         url:finalUrl
     });
-}
+},
 
- async function getType(){
+ async  getType(){
     return axios({
         method:"GET",
-        url:"http://localhost:4000/unitType"
+        url:"http://localhost:4000/type"
     })
 }
+}
 
-export default configuration
+// module.exports = configuration,getUnits
+// export default getUnits;
+// exports.configuration = configuration;
+// exports.getUnits = getUnits
 //  exports.configuration=configuration;
 //  exports.getUnits = getUnits;
-
+// module.exports={
+//     configuration,getUnits
+// }
 
